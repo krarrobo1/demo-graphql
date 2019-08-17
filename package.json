@@ -1,0 +1,29 @@
+{
+    "name": "demo",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build": "babel src -d dist --source-maps",
+        "start": "nodemon src/index.js --exec babel-node",
+        "serve": "node dist/index.js",
+        "clean": "rimraf dist"
+    },
+    "author": "Ricardo",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.17.1",
+        "express-graphql": "^0.9.0",
+        "graphql": "^14.4.2",
+        "graphql-tools": "^4.0.5",
+        "mongoose": "^5.6.9",
+        "rimraf": "^3.0.0"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.5.5",
+        "@babel/core": "^7.5.5",
+        "@babel/node": "^7.5.5",
+        "@babel/preset-env": "^7.5.5",
+        "nodemon": "^1.19.1"
+    }
+}
